@@ -56,7 +56,7 @@ export const AboutSection = () => {
     <section className= "text-white">
         <div className= "md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
             <Image src="/images/tec.png" width={500} height={500} alt="ok"/>
-            <div>
+            <div className = "mt-4 md:mt-0 text-left flex flex-col h-full">
                 <h2 className= "text-4xl font-bold text-white mb-4">
                     About Me
                 </h2>
@@ -66,7 +66,7 @@ export const AboutSection = () => {
                     Actualmente estoy estudiando en el Tecnológico de Monterrey.
                     En la carrera de Ingeniería en Tecnologías Computacionales.
                 </p>
-                <div className ="flex flex-row mt-8">
+                <div className ="flex flex-row justify-start mt-8">
                     <TabButton selectTab = {() => handleTabChange("skills")} active = {tab === "skills"}> {" "}Skills {" "} </TabButton>
                     <TabButton selectTab = {() => handleTabChange("education")} active = {tab === "education"}> {" "}Education {" "} </TabButton>
                     <TabButton selectTab = {() => handleTabChange("certifications")} active = {tab === "certifications"}> {" "}Certifications {" "} </TabButton>
