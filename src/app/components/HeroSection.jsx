@@ -42,7 +42,7 @@ const HeroSection = () => {
                 </div>
                 <div className="col-span-5 place-self-center mt-4 lg:mt-0">
                     <div className= "relative w-[150px] h-[150px] lg:w-[300px] lg:h-[300px] rounded-full overflow-hidden bg-[#181818]">
-                    <Image src = "/images/memoji.png" layout="fill" objectFit="cover" alt="Memoji" className="absolute top-0 left-0 w-full h-full" />
+                    <Image src = "/images/memoji.png" layout="fill" objectFit="cover" alt="Memoji" className="absolute top-0 left-0" />
                     </div>
                 </div>
             </div>
