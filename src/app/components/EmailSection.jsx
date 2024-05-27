@@ -28,9 +28,39 @@ const EmailSection = () => {
             </div>
         </div>
         <div>
-            <form className = "flex flex-col gap-4">
-                <label htmlFor = "email" className = "text-white">Correo</label>
-                <input type = "email" id = "email" required placeholder = "eugeniopedraza@live.com.mx"/>
+            <form className = "flex flex-col">
+                <div className = "mb-6">
+                <label htmlFor = "email" className = "text-white block font-medium mb-2">Correo</label>
+                <input className = "bg-[#18191E] border-[#33354F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5  " 
+                type = "email" 
+                id = "email" 
+                required 
+                placeholder = "eugeniopedraza@live.com.mx"/>
+                </div>
+                <div className = "mb-6">
+                <label htmlFor = "subject" className = "text-white block font-medium mb-2">Asunto</label>
+                <input className = "bg-[#18191E] border-[#33354F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5  " 
+                type = "subject" 
+                id = "subject" 
+                required 
+                placeholder = "¡Hola! ¿Comó estas?"/>
+                </div>
+                <div className = "mb-6">
+                    <label htmlFor = "message" className = "text-white block text-sm mb-2 font-medium">
+                        Message
+                    </label>
+                    <textarea 
+                        name = "message"
+                        id = "message"
+                        className = "bg-[#18191E] border-[#33354F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                        placeholder = "Hola Eugenio, me gustaría hablar sobre..."
+                    />
+                </div>
+                <button 
+                type = "submit"
+                className = "bg-purple-500 hover:bg-purple-600 text-white font-medium py-2.5 px-5 rounded-lg w-full">
+                    Enviar Mensje
+                </button>
             </form>
         </div>
     </section>
