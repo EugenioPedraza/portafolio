@@ -17,13 +17,15 @@ const HeroSection = () => {
                             1000, 
                             'Desarollador Web',
                             1000,
-                            'Ingeniero de Tecnologias Computaciones',
+                            'Ingeniero de Tecnologias Computacionales',
                             1000,
                             'Estudiante del TEC',
+                            1000,
+                            'Desarrolador de Aplicaciones',
                             1000
                         ]}
                         wrapper="span"
-                        speed={20}
+                        speed={50}
 
                         repeat={Infinity}
                         />
