@@ -42,7 +42,7 @@ const TAB_DATA = [
         )
     }
 ];
-
+// asd
 const AboutSection = () => {
     const [tab, setTab] = useState("skills");
     const [isPending, startTransition] = useTransition();   
