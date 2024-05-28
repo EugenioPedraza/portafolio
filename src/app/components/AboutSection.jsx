@@ -59,7 +59,7 @@ const AboutSection = () => {
                 <Image src="/images/tecblanco.png" width={500} height={500} alt="TEC" />
                 <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
                     <h2 className="text-4xl font-bold text-white mb-4">
-                        Sobre Mi
+                        Sobre Mí
                     </h2>
                     <p className="text-base lg:text-lg">
                         Soy un desarrollador web con experiencia en el desarrollo de aplicaciones web y móviles.
