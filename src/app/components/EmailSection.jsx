@@ -1,29 +1,29 @@
 "use client"
-import React from 'react'
+import React, {useState} from 'react'
 import GithubIcon from '../../../public/github-icon.svg'
 import InstagramIcon from '../../../public/instagram-icon.svg'
 import Link from 'next/link'
 import Image from 'next/image'
 
 const EmailSection = () => {
-
+    const [emailSubmitted, setEmailSubmitted] = useState(false);    
     const handleSubmit = async (e) => {
         e.preventDefault();
         const data = {
             email: e.target.email.value,
             subject: e.target.subject.value,
             message: e.target.message.value,
-        };
+        }
         const JSONdata = JSON.stringify(data);
-        const endpoint = "api/send"
+        const endpoint = "/api/send"
 
         const options = {
-            method: 'POST',
+            method: "POST",
             headers: {
-                'Content-Type': 'application/json'
+                "Content-Type": "application/json"
             },
 
-            body: JSONdata
+            body: JSONdata,
         }
 
         const response = await fetch(endpoint, options);
@@ -32,6 +32,7 @@ const EmailSection = () => {
         
         if (response.status === 200){
             console.log('Mensaje Enviado');
+            setEmailSubmitted(true);
         };
     }
   return (
@@ -72,7 +73,7 @@ const EmailSection = () => {
                 <label htmlFor = "subject" className = "text-white block font-medium mb-2">Asunto</label>
                 <input className = "bg-[#18191E] border-[#33354F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5  " 
                 name = "subject"
-                type = "subject" 
+                type = "text" 
                 id = "subject" 
                 required 
                 placeholder = "¡Hola! ¿Comó estas?"/>

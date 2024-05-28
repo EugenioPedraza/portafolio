@@ -19,8 +19,8 @@ const projectsData = [
         description: "Aplicacion para los VisionOS",
         image: "/images/tecblanco.png",
         tag:["All", "App"],
-        gitUrl: "/",
-        previewUrl: "/",
+        gitUrl: "https://github.com/EugenioPedraza/VisionDoc",
+        previewUrl: "",
 
     },
     {
