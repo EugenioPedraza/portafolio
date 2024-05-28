@@ -59,7 +59,7 @@ const AboutSection = () => {
                 <Image src="/images/tecblanco.png" width={500} height={500} alt="TEC" />
                 <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
                     <h2 className="text-4xl font-bold text-white mb-4">
-                        About Me
+                        Sobre Mi
                     </h2>
                     <p className="text-base lg:text-lg">
                         Soy un desarrollador web con experiencia en el desarrollo de aplicaciones web y móviles.
@@ -68,9 +68,9 @@ const AboutSection = () => {
                         En la carrera de Ingeniería en Tecnologías Computacionales.
                     </p>
                     <div className="flex flex-row justify-start mt-8">
-                        <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>Skills</TabButton>
-                        <TabButton selectTab={() => handleTabChange("education")} active={tab === "education"}>Education</TabButton>
-                        <TabButton selectTab={() => handleTabChange("certifications")} active={tab === "certifications"}>Certifications</TabButton>
+                        <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>Habilidades</TabButton>
+                        <TabButton selectTab={() => handleTabChange("education")} active={tab === "education"}>Educación</TabButton>
+                        <TabButton selectTab={() => handleTabChange("certifications")} active={tab === "certifications"}>Certificados</TabButton>
                     </div>
                     <div className="mt-8">
                         {TAB_DATA.find((t) => t.id === tab).content}

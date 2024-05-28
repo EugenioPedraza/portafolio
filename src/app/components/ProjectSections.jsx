@@ -9,7 +9,7 @@ const projectsData = [
         title: "Website Next.JS",
         description: "Pagina de portafolio personal",
         image: "/images/tecblanco.png",
-        tag: ["All", "Web"],
+        tag: ["Todo", "Web"],
         gitUrl: "/",
         previewUrl: "/",
     },
@@ -18,7 +18,7 @@ const projectsData = [
         title: "VisionOS App",
         description: "Aplicacion para los VisionOS",
         image: "/images/tecblanco.png",
-        tag:["All", "App"],
+        tag:["Todo", "App"],
         gitUrl: "https://github.com/EugenioPedraza/VisionDoc",
         previewUrl: "",
 
@@ -28,7 +28,7 @@ const projectsData = [
         title: "Videjuego en Unity",
         description: "Juego de plataformas en 2D",
         image: "/images/tecblanco.png",
-        tag: ["All", "App"],
+        tag: ["Todo", "App"],
         gitUrl: "/",
         previewUrl: "/",
     },
@@ -37,7 +37,7 @@ const projectsData = [
         title: "Website .NET",
         description: "Pagina para SorteoTec",
         image: "/images/tecblanco.png",
-        tag: ["All", "Web"],
+        tag: ["Todo", "Web"],
         gitUrl: "/",
         previewUrl: "/",
     }
@@ -60,7 +60,7 @@ const ProjectSections = () => {
         Mis Proyectos
         </h2>
         <div className = "text-white flex flex-row justify-center items-center gap-2 py-6 ">
-            <ProjectTag onClick = {handleTagChange} name = "All" isSelected={tag === "All"}/>
+            <ProjectTag onClick = {handleTagChange} name = "Todo" isSelected={tag === "All"}/>
             <ProjectTag onClick = {handleTagChange} name = "Web" isSelected={tag === "Web"}/>
             <ProjectTag onClick = {handleTagChange} name = "App" isSelected={tag === "App"}/>
         </div>
