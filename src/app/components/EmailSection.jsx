@@ -2,6 +2,7 @@
 import React, {useState} from 'react'
 import GithubIcon from '../../../public/github-icon.svg'
 import InstagramIcon from '../../../public/instagram-icon.svg'
+import WhatsappIcon from '../../../public/whatsapp-icon.svg'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -54,8 +55,11 @@ const EmailSection = () => {
                     <Image src={GithubIcon} alt = "GitHub Icon" width={47} height={50}/>
                 </Link>
                 <Link href="https://www.instagram.com/pedrazaaaaaaa/">
-                <Image src={InstagramIcon} alt="Instagram Icon" />
-            </Link>
+                <Image src={InstagramIcon} alt="Instagram Icon" width={47} height={50}/>
+                </Link>
+                <Link href="http://wa.me/8122097720">
+                <Image src={WhatsappIcon} alt="Whatsapp Icon" width={47} height={50}/>
+                </Link>
             </div>
         </div>
         <div>
