@@ -45,7 +45,7 @@ const projectsData = [
 
 
 const ProjectSections = () => {
-  const [tag, setTag] = useState("All");
+  const [tag, setTag] = useState("Todo");
 
   const handleTagChange = (newTag) => {
     setTag(newTag);
@@ -60,7 +60,7 @@ const ProjectSections = () => {
         Mis Proyectos
         </h2>
         <div className = "text-white flex flex-row justify-center items-center gap-2 py-6 ">
-            <ProjectTag onClick = {handleTagChange} name = "Todo" isSelected={tag === "All"}/>
+            <ProjectTag onClick = {handleTagChange} name = "Todo" isSelected={tag === "Todo"}/>
             <ProjectTag onClick = {handleTagChange} name = "Web" isSelected={tag === "Web"}/>
             <ProjectTag onClick = {handleTagChange} name = "App" isSelected={tag === "App"}/>
         </div>
