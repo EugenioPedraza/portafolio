@@ -17,10 +17,10 @@ const projectsData = [
         id: 2,
         title: "VisionOS App",
         description: "Aplicacion para los VisionOS",
-        image: "/images/tecblanco.png",
+        image: "/images/visionDoc.png",
         tag:["Todo", "App"],
         gitUrl: "https://github.com/EugenioPedraza/VisionDoc",
-        previewUrl: "",
+        previewUrl: "https://www.youtube.com/watch?v=tR1tP5SS5fU",
 
     },
     {

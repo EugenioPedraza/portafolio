@@ -6,6 +6,4 @@ const NavLink = ({ href, title }) => {
     );
 };
 
-// TEST
-
 export default NavLink;
