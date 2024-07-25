@@ -1,38 +1,37 @@
+// import { EmailTemplate } from '../../../components/EmailTemplate';
 import { Resend } from 'resend';
-import { NextResponse } from 'next/server';
+import { NextResponse } from "next/server";
 import React from 'react';
+
+
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 const fromEmail = process.env.FROM_EMAIL;
 
-export default async function handler(req, res) {
-  if (req.method === 'POST') {
-    try {
-      const { email, subject, message } = req.body;
+export async function POST(req, res) {
+    const { body } = await req.json();
+    const { email, subject, message } = body;
 
-      const { data, error } = await resend.emails.send({
-        from: fromEmail,
-        to: ["eugeniopedraza@live.com.mx", email],
-        subject: subject,
-        react: (
-          <>
-            <h1>{subject}</h1>
-            <p>¡Gracias por contactarme!</p>
-            <p>Nuevo mensaje enviado</p>
-            <p>{message}</p>
-          </>
-        ),
-      });
+  try {
+    const { data, error } = await resend.emails.send({
+      from: fromEmail,
+      to: ["eugeniopedraza@live.com.mx", email],
+      subject: subject,
+      react: 
+      <>
+        <h1>{subject}</h1>
+        <p>¡Gracias por contactarme!</p>
+        <p>Nuevo mensaje enviado</p>
+        <p>{message}</p>
+      </>
+    });
 
-      if (error) {
-        res.status(500).json({ error });
-      } else {
-        res.status(200).json(data);
-      }
-    } catch (error) {
-      res.status(500).json({ error: error.message });
+    if (error) {
+      return Response.json({ error }, { status: 500 });
     }
-  } else {
-    res.status(405).json({ message: 'Method Not Allowed' });
+
+    return Response.json(data);
+  } catch (error) {
+    return Response.json({ error }, { status: 500 });
   }
 }
