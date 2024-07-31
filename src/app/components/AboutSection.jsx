@@ -8,7 +8,7 @@ const TAB_DATA = [
         title: "skills",
         id: "skills",
         content: (
-            <ul className = "list-disc pl-10">
+            <ul className = "list-disc pl-12">
                 <li>Node.js</li>
                 <li>React.js</li>
                 <li>C++</li>
@@ -22,7 +22,7 @@ const TAB_DATA = [
         title: "education",
         id: "education",
         content: (
-            <ul className = "list-disc pl-10">
+            <ul className = "list-disc pl-12 mb-24">
                 <li>Ing. en Tecnologías Computacionales</li>
                 <li>Tecnológico de Monterrey</li>
             </ul>
@@ -32,7 +32,7 @@ const TAB_DATA = [
         title: "certifications",
         id: "certifications",
         content: (
-            <ul className = "list-disc pl-10">
+            <ul className = "list-disc pl-12 mb-6">
                 <li>React.js</li>
                 <li>Node.js</li>
                 <li>Python</li>
@@ -42,7 +42,8 @@ const TAB_DATA = [
         )
     }
 ];
-// asd
+
+
 const AboutSection = () => {
     const [tab, setTab] = useState("skills");
     const [isPending, startTransition] = useTransition();   
@@ -56,18 +57,18 @@ const AboutSection = () => {
     return (
         <section className="text-white">
             <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-                <Image src="/images/tecblanco.png" width={500} height={500} alt="TEC" />
+                <Image src="/images/tecblanco.png" width={450} height={450} alt="TEC" />
                 <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
                     <h2 className="text-4xl font-bold text-white mb-4">
                         Sobre Mí
                     </h2>
                     <p className="text-base lg:text-lg">
-                        Soy un desarrollador web con experiencia en el desarrollo de aplicaciones web y móviles.
+                        Soy un desarrollador con experiencia en la creación de aplicaciones web y móviles.
                         En mi tiempo libre me gusta aprender nuevas tecnologías y trabajar en proyectos personales.
                         Actualmente estoy estudiando en el Tecnológico de Monterrey.
                         En la carrera de Ingeniería en Tecnologías Computacionales.
                     </p>
-                    <div className="flex flex-row justify-start mt-8">
+                    <div className="mt-7">
                         <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>Habilidades</TabButton>
                         <TabButton selectTab={() => handleTabChange("education")} active={tab === "education"}>Educación</TabButton>
                         <TabButton selectTab={() => handleTabChange("certifications")} active={tab === "certifications"}>Certificados</TabButton>

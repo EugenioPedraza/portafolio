@@ -33,8 +33,8 @@ const HeroSection = () => {
                             </span>
                         </span>
                     </h1>
-                    <p className="text-[#a1b69c] text-base sm:text-lg mb-6 lg:text-xl">
-                        Lorem ipsum dolor sit amet consectetur adipsisicing elit. Quisuips volpatim
+                    <p className="text-[#8a86ab] text-base sm:text-lg mb-6">
+                    Bienvenido a mi portafolio digital. Aquí podrás encontrar una selección de mis proyectos tecnológicos desarrollados durante mis estudios.
                     </p>
                     <div>
                         <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white">
