@@ -2,6 +2,7 @@
 import React from 'react'
 import Image from "next/image";
 import { TypeAnimation } from 'react-type-animation';
+import Link from 'next/link'
 
 const HeroSection = () => {
     return (
@@ -37,9 +38,12 @@ const HeroSection = () => {
                     Bienvenido a mi portafolio digital. Aquí podrás encontrar una selección de mis proyectos tecnológicos desarrollados durante mis estudios.
                     </p>
                     <div>
+                        <Link href = "#contact">
                         <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br  from-blue-400 via-green-500 to-yellow-500 hover:bg-slate-800 text-white">
                             Contactame
                         </button>
+                        </Link>
+
                         <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br  from-blue-400 via-green-500 to-yellow-500 hover:bg-slate-8 text-white">
                             <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Descargar CV</span>
                         </button>
