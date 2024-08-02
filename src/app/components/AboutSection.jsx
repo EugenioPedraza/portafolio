@@ -71,7 +71,6 @@ const AboutSection = () => {
                     <div className="mt-7">
                         <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>Habilidades</TabButton>
                         <TabButton selectTab={() => handleTabChange("education")} active={tab === "education"}>Educación</TabButton>
-                        <TabButton selectTab={() => handleTabChange("certifications")} active={tab === "certifications"}>Certificados</TabButton>
                     </div>
                     <div className="mt-8">
                         {TAB_DATA.find((t) => t.id === tab).content}

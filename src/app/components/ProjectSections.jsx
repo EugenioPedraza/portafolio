@@ -56,6 +56,7 @@ const ProjectSections = () => {
   );
   return (
     <>
+    <section id="projects" className = "bg-[#121212]">
         <h2 className = "text-center text-4xl font-bold text-white mt-4 py-10">
         Mis Proyectos
         </h2>
@@ -76,6 +77,7 @@ const ProjectSections = () => {
             />
         ))}
         </div>
+        </section>
     </>
   );
 };
