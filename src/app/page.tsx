@@ -20,6 +20,7 @@ export default function Home() {
       <SpotifySection/>
       </div>
       <Footer/>
+      <SpeedInsights />
     </main>
   );
 }
