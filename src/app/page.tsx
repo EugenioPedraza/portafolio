@@ -7,6 +7,7 @@ import EmailSection from "./components/EmailSection";
 import Footer from "./components/Footer";
 import SpotifySection from "./components/SpotifySection";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       </div>
       <Footer/>
       <SpeedInsights />
+      <Analytics/>
     </main>
   );
 }
