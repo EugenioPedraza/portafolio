@@ -35,7 +35,7 @@ const projectsData = [
     {
         id: 4,
         title: "Website .NET",
-        description: "Pagina para SorteoTec",
+        description: "Proyecto de clase de Mockup",
         image: "/images/sorteoweb.png",
         tag: ["Todo", "Web"],
         gitUrl: "https://github.com/EugenioPedraza/SorteoTec-WEB",
