@@ -47,10 +47,10 @@ const EmailSection = () => {
   return (
     <section id = "contact" className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
       <div className="z-10">
-        <h5 className="text-xl font-bold text-white my-2">¡Contáctame!</h5>
+        <h5 className="text-xl font-bold text-white my-2">Contact Me</h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
           {" "}
-          Estoy actualmente buscando por nuevas oportunidades para aprender y crecer como desarrollador. Si tienes alguna pregunta o simplemente quieres saludar, no dudes en contactarme.
+          I am currently looking for new opportunities to learn and grow as a developer. If you have any questions or just want to say hello, feel free to contact me.
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href="https://github.com/EugenioPedraza">
@@ -89,7 +89,7 @@ const EmailSection = () => {
             />
           </div>
           <div className="mb-6">
-            <label htmlFor="message" className="text-white block text-sm mb-2 font-medium">Mensaje</label>
+            <label htmlFor="message" className="text-white block text-sm mb-2 font-medium">Message</label>
             <textarea
               name="message"
               id="message"
@@ -101,10 +101,10 @@ const EmailSection = () => {
             type="submit"
             className="bg-blue-400 hover:bg-blue-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
           >
-            Enviar Mensaje
+            Send Message
           </button>
           {emailSubmitted && (
-            <p className="text-green-500 text-sm mt-2">Correo enviado correctamente.</p>
+            <p className="text-green-500 text-sm mt-2">Email sent correctly.</p>
           )}
         </form>
       </div>

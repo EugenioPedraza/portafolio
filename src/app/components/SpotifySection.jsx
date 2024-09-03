@@ -15,8 +15,8 @@ const SpotifySection = () => {
       <div className="flex items-center justify-center">
         <div className="text-center md:text-left">
           <div className="text-4xl font-bold text-white">
-            <p>Mi playlist favorita del</p>
-            <p className="bg-gradient-to-r from-blue-400 via-green-500 to-yellow-500 bg-clip-text text-transparent hitespace-pre-wrap">momento</p>
+            <p>My currently favorite</p>
+            <p className="bg-gradient-to-r from-blue-400 via-green-500 to-yellow-500 bg-clip-text text-transparent hitespace-pre-wrap">playlist</p>
           </div>
         </div>
       </div>

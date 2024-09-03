@@ -63,14 +63,13 @@ const AboutSection = () => {
                         Sobre Mí
                     </h2>
                     <p className="text-base lg:text-lg">
-                        Soy un desarrollador con experiencia en la creación de aplicaciones web y móviles.
-                        En mi tiempo libre me gusta aprender nuevas tecnologías y trabajar en proyectos personales.
-                        Actualmente estoy estudiando en el Tecnológico de Monterrey.
-                        En la carrera de Ingeniería en Tecnologías Computacionales.
+                    I am a developer with experience in creating web and mobile applications, using Oracle cloud infraestructure, and development.
+In my free time, I like to learn new technologies and work on personal projects.
+I am currently studying at Tecnológico de Monterrey, pursuing a degree in Computer Technology Engineering.
                     </p>
                     <div className="mt-7">
-                        <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>Habilidades</TabButton>
-                        <TabButton selectTab={() => handleTabChange("education")} active={tab === "education"}>Educación</TabButton>
+                        <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>Skills</TabButton>
+                        <TabButton selectTab={() => handleTabChange("education")} active={tab === "education"}>Education</TabButton>
                     </div>
                     <div className="mt-8">
                         {TAB_DATA.find((t) => t.id === tab).content}
