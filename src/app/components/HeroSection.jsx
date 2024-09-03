@@ -18,13 +18,13 @@ const HeroSection = () => {
                                     sequence={[
                                         'Eugenio Pedraza',
                                         1000,
-                                        'Desarollador Web',
+                                        'Web Developer',
                                         1000,
-                                        'Ingeniero de Tecnologias Computacionales',
+                                        'B.S. in Computer Science and Technology',
                                         1000,
-                                        'Estudiante del TEC',
+                                        'Student @ Tec de Monterrey',
                                         1000,
-                                        'Desarrolador de Aplicaciones',
+                                        'App Developer',
                                         1000
                                     ]}
                                     wrapper="span"
