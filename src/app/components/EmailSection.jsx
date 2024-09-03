@@ -85,7 +85,7 @@ const EmailSection = () => {
               type="text"
               id="subject"
               required
-              placeholder="¡Hola! ¿Cómo estás?"
+              placeholder="Hi, how are you?"
             />
           </div>
           <div className="mb-6">
@@ -94,7 +94,7 @@ const EmailSection = () => {
               name="message"
               id="message"
               className="bg-[#18191E] border-[#33354F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-              placeholder="Hola Eugenio, me gustaría hablar sobre..."
+              placeholder="Hello, Eugenio. I would like to talk to you about..."
             />
           </div>
           <button

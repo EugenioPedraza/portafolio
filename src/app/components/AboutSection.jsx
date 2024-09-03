@@ -23,7 +23,7 @@ const TAB_DATA = [
         id: "education",
         content: (
             <ul className = "list-disc pl-12 mb-24">
-                <li>Ing. en Tecnologías Computacionales</li>
+                <li>B.S. in Computer Science and Technology</li>
                 <li>Tecnológico de Monterrey</li>
             </ul>
         )
@@ -60,7 +60,7 @@ const AboutSection = () => {
                 <Image src="/images/tecblanco.png" width={450} height={450} alt="TEC" />
                 <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
                     <h2 className="text-4xl font-bold text-white mb-4">
-                        Sobre Mí
+                        About Me
                     </h2>
                     <p className="text-base lg:text-lg">
                     I am a developer with experience in creating web and mobile applications, using Oracle cloud infraestructure, and development.
