@@ -67,7 +67,7 @@ const EmailSection = () => {
       <div>
         <form className="flex flex-col" onSubmit={handleSubmit}>
           <div className="mb-6">
-            <label htmlFor="email" className="text-white block font-medium mb-2">Correo</label>
+            <label htmlFor="email" className="text-white block font-medium mb-2">Email</label>
             <input
               className="bg-[#18191E] border-[#33354F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
               name="email"
@@ -78,7 +78,7 @@ const EmailSection = () => {
             />
           </div>
           <div className="mb-6">
-            <label htmlFor="subject" className="text-white block font-medium mb-2">Asunto</label>
+            <label htmlFor="subject" className="text-white block font-medium mb-2">Subject</label>
             <input
               className="bg-[#18191E] border-[#33354F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
               name="subject"
