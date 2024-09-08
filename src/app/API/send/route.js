@@ -20,7 +20,8 @@ export async function POST(req, res) {
         <>
           <h1>{subject}</h1>
           <p>Thank you for contacting me!</p>
-          <p>New message submitted:</p>
+          <p>I will try to get back at you as soon as possible.</p>
+          <p>Your submitted message: </p>
           <p>{message}</p>
         </>
       ),
