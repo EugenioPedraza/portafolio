@@ -5,7 +5,9 @@ import { Resend } from "resend";
 const resend = new Resend(process.env.RESEND_API_KEY);
 const fromEmail = process.env.FROM_EMAIL;
 
+// This function is to deplot on the edge network (available nearest to the User)
 export const runtime = 'edge';
+// This function makes vercel to not use cache for this function, i.e. it will be called every time a new event is triggered
 export const dynamic = 'force-dynamic';
 
 export async function POST(req, res) {
