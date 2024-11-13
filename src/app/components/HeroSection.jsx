@@ -42,10 +42,11 @@ const HeroSection = () => {
                             Contact Me
                         </button>
                         </Link>
-
+                        <a href = "CV_EugenioPedraza.pdf" download="CV_EugenioPedraza.pdf">
                         <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br  from-blue-400 via-green-500 to-yellow-500 hover:bg-slate-8 text-white">
-                            <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Download CV (WIP)</span>
+                            <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Download CV</span>
                         </button>
+                        </a>
                     </div>
                 </div>
                 <div className="col-span-5 place-self-center mt-4 lg:mt-0">
