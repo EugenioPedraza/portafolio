@@ -59,9 +59,6 @@ const EmailSection = () => {
           <Link href="https://www.instagram.com/pedrazaaaaaaa/">
             <Image src={InstagramIcon} alt="Instagram Icon" width={47} height={50} />
           </Link>
-          <Link href="http://wa.me/8122097720">
-            <Image src={WhatsappIcon} alt="Whatsapp Icon" width={47} height={50} />
-          </Link>
         </div>
       </div>
       <div>

@@ -8,7 +8,7 @@ const Footer = () => {
                 Thanks for visiting!
             </span>
             <p className = "text-slate-600 ">
-                @piedras
+                Eugenio Pedraza
             </p>
         </div>
     </footer>
