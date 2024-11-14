@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import GithubIcon from "../../../public/github-icon.svg";
 import InstagramIcon from "../../../public/instagram-icon.svg";
-import WhatsappIcon from "../../../public/whatsapp-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 
